@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: minidocs
-        image: danishbuksh22/minidocs
+        image: minidocs2.0:6
         ports:
         - containerPort: 8081
         
