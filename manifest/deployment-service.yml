@@ -19,7 +19,7 @@ spec:
         image: minidocs2.0:6
         ports:
         - containerPort: 8081
-        
+
 ---
 apiVersion: v1
 kind: Service
@@ -27,11 +27,12 @@ metadata:
   name: react-service
 spec:
   selector:
-    app.kubernetes.io/name: react-app
+    app: react-app
   ports:
     - protocol: TCP
       port: 80
       targetPort: 8081
-    type: LoadBalancer  
+  type: LoadBalancer
+
         
 
