@@ -15,8 +15,8 @@ spec:
         app: react-app
     spec:
       containers:
-      - name: minidocs
-        image: danishbuksh22/minidocs2.0
+      - name: docsapp
+        image: danishbuksh22/minidocs2.0:6
         ports:
         - containerPort: 8081
 
